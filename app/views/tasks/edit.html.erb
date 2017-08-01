@@ -1,0 +1,11 @@
+<h1>Let's edit this task</h1>
+
+<%= form_for(@task) do |f| %>
+<%= f.label :description, "Add a task" %>
+<%= f.text_field :description %>
+<%= f.label :done, "Done?" %>
+<%= f.check_box :done %>
+
+<%= f.submit "Go" %>
+<% end %>
+
